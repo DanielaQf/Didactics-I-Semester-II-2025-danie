@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Didactics I – Semester II/2025</title>
+
+  <!-- Tipografía alternativa a Lemon Milk -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --color-fondo: #fefefe;
+      --color-primario: #d8e2dc;
+      --color-secundario: #fcd5ce;
+      --color-acento: #cdb4db;
+      --color-texto: #333;
+      --color-borde: #ddd;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--color-fondo);
+      color: var(--color-texto);
+    }
+
+    /* Portada animada */
+    .portada {
+      background-color: var(--color-acento);
+      color: white;
+      text-align: center;
+      padding: 5rem 2rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .portada h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .portada p {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    nav {
+      background-color: var(--color-secundario);
+      border-bottom: 1px solid var(--color-borde);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 1rem;
+    }
+
+    nav ul li {
+      margin: 0.5rem 1rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: var(--color-texto);
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: var(--color-acento);
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    section {
+      background-color: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      border: 1px solid var(--color-borde);
+    }
+
+    section h2 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      color: var(--color-texto);
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+    }
+
+    .reflexion {
+      background-color: var(--color-acento);
+      padding: 1rem;
+      border-radius: 6px;
+      color: #fff;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    @media (min-width: 700px) {
+      main {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="portada">
+    <h1>Didactics I – Semester II/2025</h1>
+    <p>Digital portafolio made by Daniela Quijada</p>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="#Chapter 9">Chapter 9</a></li>
+      <li><a href="#Chapter 10">Chapter 10</a></li>
+      <li><a href="#Chapter 11">Chapter 11</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="Chapter 9">
+      <h2>Chapter 9: Managing for Success</h2>
+      <iframe src="documentos/Presentation chap 9.pdf"></iframe>
+      <div class="reflexion">
+        From Chapter 9: Managing for Success, I learned that effective classroom management is built on respect, consistency, and empathy. A teacher’s preparation, fairness, and attitude greatly influence students’ behavior and motivation. Managing for success means creating a positive space where students feel valued, understand expectations, and are encouraged to learn and grow.
+      </div>
+    </section>
+
+    <section id="Chapter 10">
+      <h2>Chapter 10: Seating and grouping students</h2>
+      <iframe src="documentos/Advantages and Disadvantages of Different Student Groupings.pdf"></iframe>
+      <iframe src="documentos/Brochure chapter 9.pdf"></iframe>
+      <div class="reflexion">
+        From this chapter, I learned that the way students are grouped in the classroom greatly influences how they learn and interact. Each grouping—whole-class teaching, individual work, pairwork, and groupwork—has its own strengths and challenges, and choosing the right one depends on the lesson’s goals and students’ needs. I also understood that effective teaching requires flexibility, clear organization, and thoughtful management of classroom dynamics. Finally, I learned that organizing pair and group activities not only improves communication and cooperation but also helps students become more autonomous and confident learners.
+      </div>
+    </section>
+
+    <section id="Chapter 11">
+      <h2>Chapter 11: Technology for learning</h2>
+      <iframe src="documentos/What is on offer- chapter eleven (1).pdf"></iframe>
+      <iframe src="documentos/Mind map using classroom ressources chart.pdf"></iframe>
+      <div class="reflexion">
+       I learned that technology can make English learning more interactive and motivating when used with clear objectives.Blended and flipped classrooms help students become more independent and active in their learning.Teachers still play an essential role as guides, choosing the right digital tools to support communication and language development.
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Daniela Quijada | Digital portfolio
+  </footer>
+</body>
+</html>
+
